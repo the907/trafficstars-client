@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "illuminate/session": "^10.12"
     },
     "require-dev": {
         "pestphp/pest": "^1.20",

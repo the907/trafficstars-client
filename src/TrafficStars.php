@@ -7,7 +7,7 @@ use AdCrafters\TrafficStars\Client;
 use AdCrafters\TrafficStars\Factory;
 
 
-final class Api
+final class TrafficStars
 {
 
     /**
