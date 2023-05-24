@@ -1,16 +1,16 @@
 <?php
-declare(strict_types=1);
 
+declare(strict_types=1);
 
 namespace AdCrafters\TrafficStars;
 
 class Factory
 {
-
     /**
      * The API key for the requests.
      */
     private ?string $apiKey = null;
+
 
 
     private ?string $baseUri = null;
@@ -44,5 +44,4 @@ class Factory
 
         return new Client($this->apiKey, $this->baseUri);
     }
-
 }

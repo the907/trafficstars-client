@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+
 
 namespace AdCrafters\TrafficStars;
 
@@ -9,6 +9,7 @@ use GuzzleHttp\Exception\GuzzleException;
 
 final class Client
 {
+
     private GuzzleClient $client;
 
     public function __construct(private string $refreshToken, private string $baseUri)
@@ -59,5 +60,6 @@ final class Client
 
         return null;
     }
+
 
 }
