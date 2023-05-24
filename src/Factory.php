@@ -32,7 +32,7 @@ class Factory
      */
     public function withBaseUri(string $baseUri): self
     {
-        $this->baseUri = $baseUri;
+        $this->baseUri = $baseUri ?? 'https://api.trafficstars.com/';
 
         return $this;
     }
@@ -42,7 +42,7 @@ class Factory
 
 
 
-        return new Client();
+        return new Client($this->apiKey, $this->baseUri);
     }
 
 }
