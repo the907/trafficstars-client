@@ -2,6 +2,7 @@
 
 namespace AdCrafters\TrafficStars;
 
-class TrafficStarsClass
+class Client
 {
+
 }
