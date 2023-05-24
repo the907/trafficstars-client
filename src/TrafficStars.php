@@ -1,15 +1,11 @@
 <?php
+
 declare(strict_types=1);
 
 namespace AdCrafters\TrafficStars;
 
-use AdCrafters\TrafficStars\Client;
-use AdCrafters\TrafficStars\Factory;
-
-
 final class TrafficStars
 {
-
     /**
      * Creates a new Open AI Client with the given API token.
      */
