@@ -15,7 +15,6 @@ class Factory
 
     private ?string $baseUri = null;
 
-
     /**
      * Sets the API key for the requests.
      */

@@ -1,6 +1,5 @@
 <?php
 
-
 namespace AdCrafters\TrafficStars;
 
 use AdCrafters\TrafficStars\Enums\Transporter\EndPoint;
@@ -9,7 +8,6 @@ use GuzzleHttp\Exception\GuzzleException;
 
 final class Client
 {
-
     private GuzzleClient $client;
 
     public function __construct(private string $refreshToken, private string $baseUri)
@@ -26,7 +24,7 @@ final class Client
     public function getAccessToken(): ?string
     {
         $accessToken = $_SESSION['access_token'] ?? null;
-        $expiresAt   = $_SESSION['expires_at'] ?? null;
+        $expiresAt = $_SESSION['expires_at'] ?? null;
 
         if ($accessToken && $expiresAt && time() < $expiresAt) {
             return $accessToken;
@@ -60,6 +58,4 @@ final class Client
 
         return null;
     }
-
-
 }
